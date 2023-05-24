@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url("https://use.typekit.net/jgs0cqq.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9e7d8;
+}
+
+/*Basic settings*/ 
+h2, h3 {
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    background-color: transparent;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    background-color: transparent;
+}
+
+
+#logo {
+    width: 5em;
+    position: fixed;
+    z-index: 200;
+    background-color: transparent;
+}
+
+.logo-wrapper a{
+    background-color:transparent;
+}
+
+.mobile-container {
+    max-width: 480px;
+    max-width: 100%;
+    margin: auto;
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+  }
+
+/* Styling af intro*/
+
+.intro video {
+width: 100%;
+position: relative;
+top: 0;
+left: 0;
+}
+
+.text-intro {
+position: absolute;
+left: 50%;
+bottom: 50%;
+top: 25%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #f9e7d8;
+-webkit-text-stroke: 1.5px #f6a117;
+font-size: 1.5rem;
+font-family: "new-spirit", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+
+
+/* Styling af første afsnit*/
+
+  .afsnit1 {
+      text-align: center;
+      text-align: justify;
+      margin: 15%;
+  }
+
+  .afsnit1 h2 {
+      text-align: center;
+  }
+
+  .afsnit1 img {
+      width: 100%;
+      height: 50%;
+  }
+
+  .afsnit1 p {
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+/*Styling af paralax citat*/
+
+.citat1 {
+  background-color: #f4a9cb;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.citat1 p {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-style: italic;
+  font-weight: 450;
+}
+
+.citat1 img {
+  width: 8%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #F4A9CB;}
+
+.citataudio::-webkit-media-controls-panel {
+   background-color: #E96A96;
+    }
+  
+audio {
+    width: 130px;
+    height: 25px;
+  }
+
+.audiocontrols {
+    margin-top: 2rem;
+}
+
+.audiocont {
+    margin-left: 45%;
+}
+
+/*Styling af billedeslide*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+padding-top: 10%;
+}
+
+.mySlides img {
+width: 50%;
+margin-left: 25%;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+.mySlides:first-child {
+    display:block;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: #1b3e7b;
+font-weight: bold;
+font-size: 2rem;
+transition: 0.6s ease;
+border-radius: 0 1px 1px 0;
+user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 1px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: #afd1de;
+}
+
+/* Caption text */
+.text {
+color: black;
+padding: 8px 12px;
+bottom: 5px;
+width: 80%;
+margin-left: 10%;
+text-align: center;
+font-size: 1.5rem;
+line-height: 2.5rem;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #1b3e7b;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #afd1de;
+}
+
+.dots-sections {
+    padding-bottom: 3rem;
+}
+
+
+
+/* styling af parallax med billede */
+
+.parallax {
+background-image: url(/images/solsikke.png);
+background-attachment: fixed;
+background-size: cover;
+height: 500px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+
+
+/* Overskrift */
+.overskrift{
+text-align: center;
+padding-top: 3rem;
+}
+
+/* Lyd over citat */
+.lydikon {
+display: flex;
+justify-content: flex-end;
+}
+
+.lydikon img{
+cursor: pointer;
+width: 25px;
+float: right;
+}
+
+/*citat om drømme */
+.citat-drom p{
+font-size: 1.5rem;
+font-weight: 400;
+font-style: normal;
+padding: 1rem 4rem;
+text-align: left;
+font-style: italic;
+font-weight: 450;
+}
+
+
+/*Kamille billede fra siden */
+.sideprofil img{
+width: 100%;
+margin-top: 2rem;
+}
+
+/*Om kamille*/
+.om-kamille p{
+text-align: center;
+font-size: 1.5rem;
+font-weight: 400;
+font-style: normal;
+padding-bottom: 15%;
+text-align: justify;
+margin: 3rem 2rem;
+}
+
+.linje {
+padding-bottom: 15%;
+}
+
+/*Links til andre sider*/ 
+
+.links-container {
+    background-size: cover;
+    height: 40vh;
+    margin-top: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 4rem;
+    background-color: transparent;
+}
+
+.linkbtn {
+    border: 2px solid #E96A96;
+    border-radius: 50px;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: #F4A9CB;
+}
+
+.linkbtn:hover {
+    background-color: #E96A96;
+    transition: ease-in-out 0.2s;
+}
+
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+        margin-top: 20%;
+    }
+
+    .afsnit1 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 5rem;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        background-position: right;
+        background-size: 100%;
+    }
+
+    .afsnit1 img {
+        width: fit-content;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4rem;
+    }
+
+    .text-responsive {
+        margin: 0;
+        padding: 0;
+    }
+
+    .article-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .citat-drom p {
+        padding: 1rem 10rem;
+        text-align: center;
+    }
+
+    .om-kamille {
+        margin: 3rem;
+    }
+
+    .linkbtn {
+        font-size: 2rem;
+        
+    }
+
+    .links-container {
+        height: 50vh;
+        margin-top: 2rem;
+}
+
+.text-intro {
+    font-size: 5rem;
+        -webkit-text-stroke: 3px #f6a117;
+        top: 40%;
+}
+
+
+.prev, .next {
+    font-size: 3rem;
+}
+
+.citat1 p{
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 5rem;
+    line-height: 5rem;
+}
+
+}

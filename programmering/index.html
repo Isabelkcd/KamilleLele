@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.position" content="45.41117;-75.69812">
+    <meta name="geo.region" content="dk-rm">
+    <meta name="geo.placename" content="Aarhus C">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kamille Lele">
+    <meta property="og:url" content="https://kamillelele.learning-2-code.dk">
+    <meta property="og:site_name" content="Kamille Lele">
+    <meta property="og:description" content="Denne webdokumentar skildrer Kamille Lele og hendes tufting virksomhed Sad Girl Summer. Kamille lider også af angst og depression.">
+    <title>Kamille Lele</title>
+    <link rel="shortcut icon" href="/images/favicon3.png" class="favicon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+<!--Intro video-->
+    <div id="intro">
+        <button class="skip" id="skipbtn" onclick="hideVideo();skipVideo()">Skip</button>
+        <video class="intro-video" id="video-logo" autoplay muted>
+            <source src="/video/introvideo_1-kopi.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+
+<!--Forside billeder, med hover-->
+    <section class="front-page backgroundone">
+        <div class="flip-card backgroundone">
+            <section class="first-picture choice flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="/images/forside1.png" alt="Kamille smiling" class="front-page-pic">
+                </div>
+
+            <div class="flip-card-back">
+                <img src="/images/blur.png" alt="character blurry" class="smiley">
+
+                <section class="info">
+                    <h3 class="headlines">Kamille Lele</h3>
+                    <p class="about">Lær Kamille at kende, og få indblik i hendes daglige udfordringer</p>
+                    <button class="btn" id="btnone">Læs mere</button>
+                </section>
+            </div>
+            </section>
+        </div>
+
+    <div class="flip-card backgroundtwo">
+        <section class="second-picture choice flip-card-inner">
+            <div class="flip-card-front">
+                <img src="/images/forside2.png" alt="Kamille laughing" class="front-page-pic">
+            </div>
+
+        <div class="flip-card-back">
+            <img src="/images/sun.png" alt="Smiley sun" class="smiley smiley-right">
+
+            <section class="info">
+                <h3 class="headlines">Sad Girl Summer</h3>
+                <p class="about">Hvad er tufting? 
+                    og hvordan forholder Kamille sig, til det at være selvstændig.</p>
+                <button class="btn" id="btntwo">Læs mere</button>
+            </section>
+        </div>
+        </section>
+    </div>
+        
+
+    <div class="flip-card backgroundthree">
+        <section class="third-picture choice flip-card-inner">
+            <div class="flip-card-front">
+                <img src="/images/forside3.png" alt="Kamille smiling with closed eyes" class="front-page-pic">
+            </div>
+
+            <div class="flip-card-back">
+                <img src="/images/heart.png" alt="heart smiley" class="smiley">
+
+                <section class="info">
+                    <h3 class="headlines">Mental Sundhed</h3>
+                    <p class="about">Vil du have de bedste forudsætninger, for at forbedre din mentale sundhed?</p>
+                    <button class="btn" id="btnthree">Læs mere</button>
+                </section>
+            </div>
+        </section>
+    </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

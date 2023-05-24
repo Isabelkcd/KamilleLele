@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.position" content="45.41117;-75.69812">
+    <meta name="geo.region" content="dk-rm">
+    <meta name="geo.placename" content="Aarhus C">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mental Sundhed">
+    <meta property="og:url" content="https://kamillelele-mental.learning-2-code.dk">
+    <meta property="og:site_name" content="Kamille Lele">
+    <meta property="og:description" content="Siden giver værktøjer til at arbejde videre med sit mentale helbred blandt andet igennem kreativitet og en vejrtrækningsøvelse.">
+    <title>Mental Sundhed</title>
+    <link rel="shortcut icon" href="/images/favicon3.png" class="favicon">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!--Logo-->
+<section class="logo-wrapper">
+<a href="index.html"><img src="/images/logo.png" alt="Logo" id="logo" onclick="videoFrontPage()"></a>
+</section>
+
+<!--Portæt video-->
+        <div id="portrait">
+            <img src="/images/sitdown.jpg" alt="Kamille leger med LEGO">
+        <div>
+            <h1 class="intro-text">Mental Sundhed</h1>
+        </div>
+        </div>
+
+<!--Interaktiv telefon-->
+<div id="interactive">
+    <h2 class="chat">Prøv vores chat!</h2>
+    <section class="image-iphone">
+        <img src="/images/mobil.png" alt="Omrids af Iphone" class="iphone">
+    </section>
+
+    <div class="wrapper-messages">
+    <section class="overflow">
+            <p class="hey robot">Hey!</p>
+            <p class="alene robot">Har du nogensinde følt dig ensom eller alene?</p>
+
+            <section class="user-choice">
+                <p class="user" id="choice-one" onclick="myAnswer()">Ja desværre</p>
+                <p class="user" id="choice-two" onclick="noAnswer();scrollWin()">Nej ikke umiddelbart</p>
+            </section>
+
+            <section class="no hide" id="no-normal">
+                <p class="happy robot new">Det er jeg glad for at høre!</p>
+                <p class="lonely robot new">12% af 16-29 årige føler sig ensomme. Derfor husk at dette kan være en helt normal følelse.</p>
+            </section>
+
+            <section class="yes hide" id="yesNormal">
+                <p class="normal robot new">Det er helt normalt!</p>
+                <p class="ensom robot new">12% af 16-29 årige føler sig ensomme. Du er derfor ikke alene.</p>
+            </section>
+
+            <p class="robot hide new" id="situations">Hvordan håndterer du svære situationer?</p>
+
+            <section class="choice hide" id="helpWhere">
+                <p class="user new" id="closest" onclick="closestAnswer()">Snakker med mine nærmeste</p>
+                <p class="user new" id="inside" onclick="insideAnswer()">Holder det inde i mig selv</p>
+                <p class="user new" id="help" onclick="helpAnswer()">Søger professionel hjælp</p>
+            </section>
+
+            <section class="close hide" id="feelings">
+                <p class="talk robot new">Det er rigtig sundt at snakke om sine tanker og følelser med dem omkring dig, bliv ved med det! </p>
+            </section>
+
+            <section class="in hide" id="proces">
+                <p class="normal robot new">Det kan være godt at bearbejde tingene selv, men husk at det kan lette at snakke med andre. 
+                </p>
+            </section>
+
+            <section class="hide" id="professional">
+                <p class="help robot new">Sejt at du har søgt hjælp! Det er helt normalt at snakke med en professionel. </p>
+            </section>
+    </section>
+    </div>
+</div>
+        
+
+<!--Angst og depression på egen krop-->
+
+
+<article class="angst">
+        <h3>Angst og Depression på egen krop</h3>
+        <div id="colum-wrapper">
+        <p>Kamille har igennem hele hendes liv oplevet angst og depression. Hun blev diagnotiseret i 2021, da hun blev sygemeldt. Angst og depression kommer til udtryk på to forskellige måder for Kamille. Angsten viser sig ved en form for uro i maven. Som hun selv siger det: <span class="quote"> "Alt min luft forsvinder bare"</span> Derimod oplever hun sine depressive perioder som værre. Det er en følelse, der er svær at se sig ud af.</p>
+        <p class="part-two">Kamille blev hjulpet igennem hendes sygdomsforløb med professionel hjælp. Hun oplevede det at blive diagnotiseret som en kæmpe hjælp. Hun kunne selv undersøge forskellige symptomer på de psykiske lidelser, hvilket gav hende en følelse af ikke at være alene, og blive bekræftet i, at hun ikke var helt unormal.</p>
+        </div>
+    </article>
+
+    <!--Citat om depression-->
+    <section class="depression">
+        <audio controls src="audio/mentalsundhed-1.m4a" class="audiocontrols"></audio>
+        <p>"Når man er depressiv, er det en følelse, og det kan man ikke altid gøre noget ved. Man føler det man føler og nogle gange ved jeg ikke engang hvorfor jeg er ked af det"</p>
+        
+    </section>
+    
+
+<!--Vejrtrækningsvideo-->
+        <article class="breathing">
+            <h3>Træk vejret i takt med vores karakter</h3>
+            <section class="breath">
+                <video class="breath-video" autoplay loop muted controls id="videoplay">
+                    <source src="/video/breath.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <p class="breathing-text">Træk vejret ind i 4 sekunder, <br> hold vejret i 4 sekunder, <br> og pust derefter ud. <br> Gentag indtil du får ro i kroppen.</p>
+            </section>
+        </article>
+
+
+<!--Parallax-->
+<div class="flowers"></div>
+
+
+<!--Typiske misfortåelser-->
+
+<article class="misunderstanding-one">
+    <h3>5 typiske misfortåelser om angst og depression</h3>
+    <h4>Ifølge Kamille</h4>
+</article>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/udsnit.png" alt="orange streg">
+      <div class="text">Det er en udbredt misforståelse, at man er handlingslammet når man har mentale udfordringer.</div>
+    </div>
+  
+    <div class="mySlides fade">
+    <img src="images/udsnit.png" alt="orange streg">
+      <div class="text">Når man står over for angst og depression, kan det være en udbredt antagelse, at man konstant er overvældet og græder uafbrudt.</div>
+    </div>
+  
+    <div class="mySlides fade">
+        <img src="images/udsnit.png" alt="orange streg">
+      <div class="text">En hyppig opfattelse er, at enten er man fuldstændig rask og i stand til at håndtere alt, eller også er man syg og helt uden evne til at udføre noget. </div>
+    </div>
+
+    <div class="mySlides fade">
+        <img src="images/udsnit.png" alt="orange streg">
+        <div class="text">En almen forestilling er, at psykiske lidelser er påfund og ikke har nogen reel eksistens i virkeligheden.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/udsnit.png" alt="orange streg">
+        <div class="text long">Mange mennesker har en tendens til at betragte psykiske udfordringer som en midlertidig tilstand, der kan sammenlignes med at have influenza. Kamille oplever, at der er en opfattelse af, at hvis man bare giver det tid nok og hviler sig, så vil man nok komme sig hurtigt og fuldstændigt.</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center" class="dots-sections">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+  </div>
+
+
+
+<!--Links til andre sider-->
+<div class="links-container">
+    <section class="links">
+        <button id="sgs" class="linkbtn" onclick="sadGirl()">Sad Girl Summer</button>
+        <button id="kl" class="linkbtn" onclick="kL()">Kamille Lele</button>
+    </section>
+</div>
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/imageslider.js"></script>
+</body>
+</html>

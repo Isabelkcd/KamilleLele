@@ -1,0 +1,792 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url("https://use.typekit.net/jgs0cqq.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9e7d8;
+}
+
+
+
+/*Basic settings*/ 
+h3, h4, h2 {
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/*Intro video*/
+#intro {
+    background-color: antiquewhite;
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-logo {
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    visibility: visible;
+}
+
+.intro-text {
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f9e7d8;
+    -webkit-text-stroke: 1.5px #E96A96;
+    font-size: 1.5rem;
+    font-family: "new-spirit", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.skip {
+    position: absolute;
+    z-index: 200;
+    background-color: #E96A96;
+    border: 2px solid #E96A96;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    margin-top: 40%;
+}
+
+.skip:hover {
+    background-color: #F4A9CB;
+    transition:ease-in-out 0.5s;
+}
+
+
+/*Forside */
+
+
+.smiley {
+    width: 90px;
+    padding-left: 0.5rem;
+}
+
+.front-page {
+    display: flex;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.headlines {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.front-page-pic {
+    width: 100vw;
+}
+
+.hover-text {
+    display: none;
+}
+
+.info h3 {
+    padding-top: 1rem;
+}
+
+.choice {
+    margin-bottom: 5rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    width: fit-content;
+    border-radius: 50px;
+    margin-top: 2rem;
+    background-color: #F4A9CB;
+    border: 2px solid #E96A96;
+    padding: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #E96A96;
+    transition: ease-in-out 0.2s;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about {
+    padding: 0.5rem 0.8rem;
+}
+
+
+
+
+
+
+
+/*Mental Sundhed side*/
+
+/* Portræt video */
+
+#logo {
+    width: 5em;
+    position: fixed;
+    z-index: 200;
+    background-color: transparent;
+}
+
+.logo-wrapper a{
+    background-color:transparent;
+}
+
+#portrait img {
+    width: 100vw;
+    height: 100%;
+}
+
+
+
+/* Parallax billede */ 
+
+/*
+.picture-div {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/kamillenike.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*/
+
+
+
+
+/* Interaktiv telefon*/ 
+
+
+
+.image-iphone {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-image: url(/images/streg.png);
+    background-position: right;
+    background-size: 130vw;
+    
+}
+
+.iphone {
+    position: relative;
+    width: fit-content;
+    height: 100vh;
+    padding: 3rem 0rem;
+}
+
+
+#interactive p {
+    border-radius: 30px;
+    margin: 0.7rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+    max-width: 230px;
+}
+
+.robot {
+    background-color: #E96A96;
+}
+
+.user {
+    background-color: #F6A117;
+    text-align: right;
+}
+
+.user:hover {
+    background-color: #fbbc57;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+#choice-one {
+    display: block;
+}
+
+.overflow {
+    margin-top: 7rem;
+    height: 70vh;
+    overflow-y: auto;
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+}
+
+
+
+.overflow section {
+    background-color: transparent;
+}
+
+.wrapper-messages {
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    height: fit-content;
+    width: 75vw;
+}
+
+.chat {
+    margin-top: 3rem;
+    text-align: center
+}
+
+
+/*Afsnit om angst og depresssion */
+
+.angst { 
+    margin-top: 57%;
+    padding: 0rem 1rem;
+}
+
+.angst h3 {
+    margin-bottom: 2rem;
+}
+
+.angst p {
+    line-height: 2.5rem;
+    margin-top: 3rem;
+}
+
+.quote {
+    font-style: italic;
+}
+
+.part-two {
+    margin-top: 2rem;
+}
+
+
+
+/*Citat omkring angst og depression*/
+
+.depression {
+    background-color: #f4a9cb;
+  font-size: 1.5rem;
+  text-align: center;
+  height: 40vh;
+  overflow-y: scroll;
+  margin-top: 5rem;
+}
+
+.depression p {
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    line-height: 4rem;
+    font-style: italic;
+    font-weight: 450;
+    margin: 1rem 5rem;
+}
+
+.depression img {
+    width: 8%;  
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: #E96A96;}
+  
+audio {
+    width: 130px;
+    height: 25px;
+  }
+
+
+.audiocontrols {
+    margin-top: 2rem;
+}
+
+
+/* Vejrtrækningsvideo */
+
+.breath-video {
+    width: 100vw;
+    height: 70vh;
+}
+
+.breathing h3 {
+    margin-top: 9rem;
+    padding: 0rem 1rem;
+}
+
+.breathing p {
+    text-align: left;
+    padding: 2rem 3rem;
+}
+
+
+/* Flower parallax */ 
+
+.flowers {
+    height: 75vh;
+    background-image: url(/images/vaseblomster.png);
+    background-attachment: fixed;
+
+}
+
+
+/* Misforståelser */ 
+
+.misunderstanding-one {
+    margin-top: 3rem;
+}
+
+.misunderstanding-one h3 {
+    margin-top: 5rem;
+}
+
+.misunderstanding-one h4 {
+    font-size: 2rem;
+    font-family: "new-spirit", serif;
+    font-weight: 500;
+    padding-top: 1rem;
+    font-style: italic;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 10%;
+    }
+    
+    .mySlides img {
+    width: 100%;
+    }
+    
+    .fade img {
+        display: none;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    
+    .mySlides:first-child {
+        display:block;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;   
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1b3e7b;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 1px 1px 0;
+    user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 1px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: #afd1de;
+    }
+    
+    /* Caption text */
+    .text {
+    color: black;
+    padding: 4rem 1rem;
+    bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    }
+
+    .long {
+        padding: 1rem;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #1b3e7b;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+    background-color: #afd1de;
+    }
+    
+    .dots-sections {
+        padding-bottom: 3rem;
+    }
+
+
+
+
+
+/*Links til andre sider*/ 
+
+.links-container {
+    background-size: cover;
+    height: 40vh;
+    margin-top: 1rem;
+}
+
+.links {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 4rem;
+    background-color: transparent;
+}
+
+.linkbtn {
+    border: 2px solid #E96A96;
+    border-radius: 50px;
+    padding: 1rem;
+    font-weight: 600;
+    background-color: #F4A9CB;
+}
+
+.linkbtn:hover {
+    background-color: #E96A96;
+    transition: ease-in-out 0.2s;
+}
+
+/*Responsive */
+
+@media only screen and (min-width: 320px) {
+    .angst {
+        padding-top: 90%;
+    }
+}
+
+@media only screen and (min-width: 580px) {
+    .overflow {
+        padding-left: 20%;
+        max-width: 30rem;
+    }
+
+    .angst {
+        padding-top: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .overflow {
+        padding-left: 25%;
+        max-width: 50rem;
+    }
+    .angst {
+        padding-top: 40%;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1224px) {
+    .overflow {
+        padding-left: 27%;
+        max-width: 50rem;
+    }
+    .angst {
+        padding-top: 0%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .front-page-pic {
+        width: 100%;
+    }
+
+    .front-page {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10%;
+    width: 100%;
+    height: 100vh;
+    }
+    
+    #colum-wrapper {
+        display: flex;
+    }
+
+    .angst h3 {
+        text-align: center;
+    }
+
+    .angst p {
+        padding: 0rem 3rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .part-two {
+        margin:0;
+    }
+
+    .breath {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 3rem;
+        justify-content: center;
+        align-content: center;
+        padding-bottom: 3rem;
+    }
+
+    .breath video {
+        width: 100%;
+    }
+
+    .breathing-text {
+        margin: auto;
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .linkbtn {
+        font-size: 2rem;
+        
+    }
+
+    .links-container {
+        height: 50vh;
+        margin-top: 2rem;
+}
+
+    .intro-text {
+        font-size: 5rem;
+        -webkit-text-stroke: 3px #E96A96;
+        top: 40%;
+    }
+
+
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+    
+      
+      /* Style the back side */
+      .flip-card-back {
+    
+        transform: rotateY(180deg);
+      }
+
+      #intro {
+        background-color: antiquewhite;
+        visibility: visible;
+        position: fixed;
+        z-index: 100;
+    }
+    
+    #video-logo {
+        width: 100vw;
+        height: 100vh;
+        background-color: antiquewhite;
+        visibility: visible;
+    }
+
+
+    /* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    }
+    
+    .mySlides img {
+    width: 80%;
+    margin-left: 10%;
+    }
+
+    .fade img{
+        display: block;
+    }
+    
+    
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    
+    .mySlides:first-child {
+        display:block;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #1b3e7b;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 1px 1px 0;
+    user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 1px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: #afd1de;
+    }
+    
+    /* Caption text */
+    .text {
+    color: black;
+    bottom: 5px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    position: absolute;
+    bottom: 35%;
+    padding: 0rem 7rem;
+    font-weight: 600;
+    }
+
+ .long {
+        bottom: 25%;
+        padding: 0rem 7rem;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #1b3e7b;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+    background-color: #afd1de;
+    }
+    
+    .dots-sections {
+        padding-bottom: 3rem;
+    }
+
+    .skip {
+        position: absolute;
+        z-index: 300;
+        background-color: #E96A96;
+        border: 2px solid #E96A96;
+        border-radius: 50px;
+        font-size: 2rem;
+        padding: .5rem 2rem;
+    }
+    
+    .skip:hover {
+        background-color: #F4A9CB;
+        transition:ease-in-out 0.5s;
+    }
+    
+    .depression p {
+        font-size: 4rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+
+}
+
+
+
+
+

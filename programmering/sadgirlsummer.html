@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="geo.position" content="45.41117;-75.69812">
+    <meta name="geo.region" content="dk-rm">
+    <meta name="geo.placename" content="Aarhus C">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sad Girl Summer">
+    <meta property="og:url" content="https://kamillelele-mental.learning-2-code.dk">
+    <meta property="og:site_name" content="Kamille Lele">
+    <meta property="og:description" content="Siden fortæller om hvad Sad Girl Summer er, hvad tufting er samt hvordan det er for Kamille Lele at være selvstændig.">
+    <link rel="shortcut icon" href="/images/favicon3.png" class="favicon">
+    <script src="/js/sadgirl.js" defer></script>
+    <title>Sad Girls Summer</title>
+    <link rel="stylesheet" href="/css/sadgirlsummer.css">
+</head>
+<body>
+
+    <!--Logo-->
+<section class="logo-wrapper">
+    <a href="index.html"><img src="/images/logo.png" alt="Logo" id="logo" onclick="videoFrontPage()"></a>
+    </section>
+    
+    <!--Tufting animation-->
+    <section class="start">
+        <video id="big-video" autoplay loop muted>
+            <source src="video/tuft.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <h1>Sad Girl Summer</h1>
+        </div>
+    </section>
+
+    <section class="tufting">
+        <article class="tuft-text">
+            <h2>Fra garn til kunst</h2>
+            <p class="tuft">Tufting er en kreativ teknink til fremstilling, 
+                hvor løkker af garn og tråd bliver trukket gennem et 
+                lærred, for at skabe mønstre eller strukturer på 
+                overfladen af stoffet. Man kan enten gøre det med 
+                hånden eller med en tuftingmaskine </p>
+        </article>
+
+        <section class="tuftingmaskine">
+            <video id="maskine" autoplay loop muted controls>
+                <source src="video/maskine.mp4" type="video/mp4">
+            </video>
+        </section>
+    </section>
+
+    <section class="taeppe"></section>
+
+    <section class="tidslinje">
+        <h2> Tidslinje</h2>
+    </section>
+
+
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="1" class="slider-range" id="myRange">
+        <p class="value">value : <span id="rangevalue"></span></p>
+    </div>
+
+    <div class="imagechange">
+        <h3 id="heading">Medievidenskab - 2015</h3>
+        <p id="imgChange">Kamille starter på Medievidenskabs Uddannelsen på Syddansk universitet i 2015, men dropper ud året efter, i 2016</p>
+    </div>
+
+    
+
+    <section class="video-parallax">
+        <video autoplay loop muted>
+            <source src="video/kast.mp4" type="video/mp4">
+        </video>
+    </section>
+
+
+    <article class="glaede-text">
+        <h2 class="header-happy">Glæde over succes</h2>
+        <audio controls src="audio/sadgirlsummer-2.mp3"></audio>
+        <p class="citat-stress">"Jeg har også stresset nogle gange, når jeg har fået 
+            mange bestillinger på en gang, så har jeg haft det sådan, åh det var jo lige 
+            netop det her, jeg ikke ville. Der prøver jeg også bare at være ærlig og sige 
+            at jeg tager lidt lang tid om det”
+            </p>
+
+        <div class="text-colum">
+        <p class="text-balance">Kamille forsøger at balancere at have en virksomhed
+            uden at falde ind i gamle rutiner, som ikke har positiv effekt på hendes 
+            mentale helbred. Hun ser Sad Girl Summer, som en forlængelse af hendes egen 
+            personlige verden og skal derfor huske sig selv på at adskille de to. </p>
+        <p class="text-balance">Kamille har ikke nogle specifikke mål, for hvor virksomheden skal ende, så 
+            længe hun er glad. Kreativitet og hobby for kamille skal være et frirum. 
+            Dette er derfor noget hun gør når lysten er der. Det kreative er med til at 
+            mindske de negative tanker, og flytte fokus</p>
+        </div>
+    </article>
+
+
+    <section class="citat">
+        <audio controls src="audio/sadgirlsummer-1.mp3" class="audiocontrols citataudio"></audio>
+        <p class="sgs"> “Det var lige den tid hvor der var det der hot girl summer, 
+            og jeg var sådan, det er ikke mig, 
+            så synes jeg bare det kunne være sjovt 
+            at det var sad girl summer i stedet for, 
+            øhmm det synes jeg ville beskrive mig meget godt, lidt sad.”
+        </p>
+    </section>
+
+
+    <section id="infographic">
+        <img src="images/mobilinfo.png" alt="infographic om hobby" class="infographic-mobile">
+        <img src="/images/infographic.png" alt="infographic om hobby" class="infographic-web">
+    </section>
+
+
+    <!--Knapper--> 
+    <div class="links-container">
+        <section class="links">
+            <button id="sgs" class="linkbtn" onclick="sadGirl()">Mental Sundhed</button>
+            <button id="kl" class="linkbtn" onclick="kL()">Kamille Lele</button>
+        </section>
+    </div>
+</body>
+</html>
